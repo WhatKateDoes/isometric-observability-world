@@ -1,0 +1,37 @@
+{
+ "tile_px": 128,
+ "anchor": 36,
+ "posts": {
+  "tower": {
+   "on": "post_tower_on.png",
+   "off": "post_tower_off.png"
+  },
+  "warehouse": {
+   "on": "post_warehouse_on.png",
+   "off": "post_warehouse_off.png"
+  },
+  "crane": {
+   "on": "post_crane_on.png",
+   "off": "post_crane_off.png"
+  },
+  "workshop": {
+   "on": "post_workshop_on.png",
+   "off": "post_workshop_off.png"
+  },
+  "vault": {
+   "on": "post_vault_on.png",
+   "off": "post_vault_off.png"
+  }
+ },
+ "crew_frames": 4,
+ "crew_scale": 0.9,
+ "source": {
+  "tower": "procedural",
+  "warehouse": "procedural",
+  "crane": "procedural",
+  "workshop": "procedural",
+  "vault": "procedural",
+  "crew": "procedural"
+ },
+ "crew": "crew.png"
+}

@@ -1,0 +1,7 @@
+{
+  "gateway": { "type": "http", "url": "http://localhost:80/" },
+  "app":     { "type": "http", "url": "http://localhost:3000/health" },
+  "db":      { "type": "tcp",  "host": "localhost", "port": 5432 },
+  "media":   { "type": "docker", "name": "minio" },
+  "jobs":    { "type": "cmd",  "cmd": "pgrep -f worker" }
+}

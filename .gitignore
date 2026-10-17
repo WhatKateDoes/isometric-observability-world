@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.DS_Store
+web/api/status.json
+web/api/*.tmp
+collector/probes.json
+web/world.json
+*.log

@@ -1,0 +1,25 @@
+{
+  "title": "Harbour Watch",
+  "tagline": "A little isometric harbour whose buildings and workers stand for the services on your servers.",
+  "status_url": "api/status.json",
+  "grid": { "w": 12, "d": 10 },
+  "palette": { "bg": "#10161f", "ground": "#2a3a33", "ground_alt": "#26342e", "accent": "#ffb347", "down": "#e0453f" },
+  "style": "isometric 2:1 pre-rendered game art, soft dusk lighting, small harbour town",
+  "kinds": {
+    "tower":     { "color": "#5b7fa6", "height": 64, "prompt": "small stone lighthouse tower with a glowing lamp" },
+    "warehouse": { "color": "#a67c52", "height": 34, "prompt": "wooden harbour warehouse with big doors" },
+    "crane":     { "color": "#c8644a", "height": 72, "prompt": "dockside cargo crane" },
+    "workshop":  { "color": "#7a9a6a", "height": 42, "prompt": "workshop with a chimney and lit windows" },
+    "vault":     { "color": "#8a7aa8", "height": 30, "prompt": "squat stone vault with a heavy iron door" }
+  },
+  "services": [
+    { "id": "gateway", "name": "Gateway",  "kind": "tower",     "at": [2, 2], "blurb": "Front door: reverse proxy" },
+    { "id": "app",     "name": "App",      "kind": "workshop",  "at": [5, 3], "blurb": "Main application" },
+    { "id": "db",      "name": "Database", "kind": "vault",     "at": [8, 3], "blurb": "Where the records are kept" },
+    { "id": "media",   "name": "Media",    "kind": "warehouse", "at": [4, 6], "blurb": "File and media storage" },
+    { "id": "jobs",    "name": "Jobs",     "kind": "crane",     "at": [8, 6], "blurb": "Background workers" }
+  ],
+  "entry": [0, 0],
+  "crew": { "max": 12, "prompt": "tiny harbour worker in a yellow coat" },
+  "hosts": { "main": { "title": "Main server" } }
+}

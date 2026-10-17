@@ -1,0 +1,21 @@
+{
+  "title": "Orbital Station",
+  "tagline": "Same engine, different theme: only data changed.",
+  "status_url": "api/status.json",
+  "grid": { "w": 12, "d": 10 },
+  "palette": { "bg": "#05070d", "ground": "#1c2433", "ground_alt": "#18202e", "accent": "#7fe3ff", "down": "#ff4d6d" },
+  "style": "isometric 2:1 pre-rendered sci-fi game art, cool blue lighting, orbital station",
+  "kinds": {
+    "reactor": { "color": "#4aa3c8", "height": 56, "prompt": "compact fusion reactor module with blue glow" },
+    "bay":     { "color": "#b0825a", "height": 30, "prompt": "cargo bay with a large hangar door" },
+    "lab":     { "color": "#8a7ac0", "height": 44, "prompt": "science lab module with domes" }
+  },
+  "services": [
+    { "id": "gateway", "name": "Airlock", "kind": "bay",     "at": [2, 2], "blurb": "Reverse proxy" },
+    { "id": "app",     "name": "Bridge Lab", "kind": "lab",  "at": [6, 3], "blurb": "Main app" },
+    { "id": "db",      "name": "Reactor", "kind": "reactor", "at": [5, 6], "blurb": "Database" }
+  ],
+  "entry": [0, 0],
+  "crew": { "max": 10, "prompt": "tiny astronaut in an orange suit" },
+  "hosts": { "main": { "title": "Main server" } }
+}
